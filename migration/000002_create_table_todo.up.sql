@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS Todo (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `Task` VARCHAR(255) NOT NULL,
+  `IsCompleted` tinyint(4) DEFAULT 0,
+  `CreateDateTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `UpdateDateTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DeleteDateTime` timestamp NULL DEFAULT  NULL,
+  `DeleteFlg` tinyint(4) NULL DEFAULT NULL,
+  PRIMARY KEY (id)
+
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
